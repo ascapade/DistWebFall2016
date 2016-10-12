@@ -11,3 +11,7 @@ body {
   display: table-cell;
   vertical-align: middle;
 }
+
+h1{
+  size: 30pt;
+}
