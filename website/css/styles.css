@@ -53,6 +53,9 @@ h1{
 #logo {
 	margin-top:5px;
 }
+.page-header{
+	border-bottom: 2px solid #eee !important;
+}
 
 /* tshirt */
 
