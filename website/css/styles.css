@@ -1,3 +1,35 @@
 h1{
 	font-family: Pacifico !important;
 }
+.navbar-nav > li > a {
+	font-family: Arial;
+	color: #fff;
+	text-transform: lowercase;
+	letter-spacing: 2pt;
+}
+.btn-default {
+	background: #2242c6 !important;
+    border: 2px solid #fff !important;
+    color: #fff !important;
+    text-transform: lowercase !important;
+    letter-spacing: 2pt !important;
+    border-radius: 0 !important;
+	
+}
+.form-control{
+	border-radius: 0 !important;
+}
+.nav >ul > li > a{
+	 -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s !important;
+}
+.nav > li > a:hover, .nav > li > a:focus{
+	background: #2242c6 !important;
+	font-style: italic;
+}
+#logo {
+	margin-top:5px;
+}
