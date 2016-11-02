@@ -1,25 +1,36 @@
 h1{
 	font-family: Pacifico !important;
 }
+.navbar-fixed-top{
+	background:#313ebe !important;
+}
 .navbar-nav > li > a {
 	font-family: Arial;
 	color: #fff;
-	text-transform: lowercase;
+	text-transform: uppercase;
 	letter-spacing: 2pt;
+	font-weight: 600;
+
 }
 .btn-default {
-	background: #2242c6 !important;
+	background: #313ebe !important;
     border: 2px solid #fff !important;
     color: #fff !important;
-    text-transform: lowercase !important;
+    text-transform: uppercase !important;
     letter-spacing: 2pt !important;
-    border-radius: 0 !important;
-	
+    border-radius: 0 !important;	
+	font-weight: 600 !important;
+ -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s !important;
 }
+
 .form-control{
 	border-radius: 0 !important;
 }
-.nav >ul > li > a{
+.nav > li > a{
 	 -o-transition:.5s;
   -ms-transition:.5s;
   -moz-transition:.5s;
@@ -27,9 +38,28 @@ h1{
   transition:.5s !important;
 }
 .nav > li > a:hover, .nav > li > a:focus{
-	background: #2242c6 !important;
-	font-style: italic;
+	background: #313ebe !important;
+	color: #000;
+}
+.btn-sign{
+	font-weight:600 !important;
+	letter-spacing: 2pt !important;
+}
+.btn-default:hover{
+	background: #e91e63 !important;
+	color: #fff !important;
+	border: 2px solid #e91e63 !important;
 }
 #logo {
 	margin-top:5px;
+}
+
+/* tshirt */
+
+.btn-primary{
+	border-radius: 0 !important;
+	border-color: #fff !important;
+}
+.thumbnail{
+	border:none !important;
 }
