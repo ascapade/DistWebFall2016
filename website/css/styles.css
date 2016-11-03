@@ -4,7 +4,7 @@ h1{
 .navbar-fixed-top{
 	background:#313ebe !important;
 }
-.navbar-nav > li > a {
+.navbar-nav > li > a{
 	font-family: Arial;
 	color: #fff;
 	text-transform: uppercase;
