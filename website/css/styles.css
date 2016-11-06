@@ -2,7 +2,7 @@ h1{
 	font-family: Pacifico !important;
 }
 .navbar-fixed-top{
-	background:#313ebe !important;
+	background:#000 !important;
 }
 .navbar-nav > li > a{
 	font-family: Arial;
@@ -13,9 +13,10 @@ h1{
 
 }
 .btn-default {
-	background: #313ebe !important;
+	background: #000 !important;
     border: 2px solid #fff !important;
     color: #fff !important;
+	font-size: 10pt !important;
     text-transform: uppercase !important;
     letter-spacing: 2pt !important;
     border-radius: 0 !important;	
@@ -77,6 +78,7 @@ h1{
 }
 
 .nav > li > a{
+	font-size:8pt;
 	 -o-transition:.5s;
   -ms-transition:.5s;
   -moz-transition:.5s;
@@ -84,8 +86,8 @@ h1{
   transition:.5s !important;
 }
 .nav > li > a:hover, .nav > li > a:focus{
-	background: #313ebe !important;
-	color: #000;
+	background: #000 !important;
+	color: #e91e63;
 }
 .btn-sign{
 	font-weight:600 !important;
