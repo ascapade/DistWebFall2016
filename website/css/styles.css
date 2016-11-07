@@ -114,3 +114,8 @@ h1{
 .thumbnail{
 	border:none !important;
 }
+
+/* for burger navigation */
+.navbar-toggle .icon-bar{
+	background: #fff !important;
+}
