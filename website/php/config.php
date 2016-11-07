@@ -1,5 +1,5 @@
 <?php
-	define('dbserver','24.99.201.43');
+	define('dbserver','localhost');
 	define('dbusername','pma');
 	define('dbpassword','testingtesting123');
 	define('dbdatabase','techsavvyadmin');
