@@ -257,10 +257,11 @@
 
                         }
                     }
+                    xmlhttp.open("POST",rootDir + "/php/register.php?fname="+fname+"&lname="+lname+"&email="+email+"&location="+loc+"&password="+pass,true);
+                    xmlhttp.send();
                 }
 
-                xmlhttp.open("POST",rootDir + "/php/register.php?fname="+fname+"&lname="+lname+"&email="+email+"&location="+loc+"&password="+pass,true);
-                xmlhttp.send();
+
 
                 }
             </script>
