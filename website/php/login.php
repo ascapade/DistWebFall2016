@@ -4,8 +4,8 @@
 	include("config.php");
 	session_start();
 	
-	$email = $database->real_escape_string($_POST['email']); //Gets user's email from the email field
-	$pass = $database->real_escape_string($_POST['password']); //Get the user's password from the password field
+	$email = $database->real_escape_string($_POST['loginEmail']); //Gets user's email from the email field
+	$pass = $database->real_escape_string($_POST['loginPassword']); //Get the user's password from the password field
 	
 	//hashes the password
 	$pass = hash('sha256', $pass);
