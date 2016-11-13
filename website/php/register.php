@@ -4,6 +4,8 @@
 	include("config.php");
 	session_start();
 	
+	$error = false;
+	$customerID = mt_rand(1, 126482);
 	$fname = $database->real_escape_string($_POST['fname']); //Get first name field
 	$lname = $database->real_escape_string($_POST['lname']); //Get last name field
 	$email = $database->real_escape_string($_POST['email']); //Get email field
@@ -18,18 +20,10 @@
 	}
 	
 	//email validation
-	$emailquery = "SELECT email FROM customers WHERE email=$email";
-	$emailqueryresult = $database->query($emailquery);
-	$emailqueryrows = $emailqueryresult->num_rows;
-	if($emailqueryrows != 0)
+	if(empty($email))
 	{
 		$error = true;
-		$emailerror = "Email is in use.";
-	}
-	else if(empty($email))
-	{
-		$error = true;
-		$emailerror = "Please enter an email";
+		$emailerror = "Please enter an email address";
 	}
 	
 	//password validation
@@ -50,8 +44,8 @@
 	$pass = hash('sha256', $pass);
 	
 	//Prepare query statement
-	$sql = "INSERT INTO customers (fname, lname, email, location, password) 
-	VALUES ('$fname', '$lname', '$email', '$location', '$pass')";
+	$sql = "INSERT INTO customers (customer_id, fname, lname, email, location, password) 
+	VALUES ($customerID, '$fname', '$lname', '$email', '$location', '$pass')";
 	
 	//Get the result of the query
 	$result = $database->query($sql);
