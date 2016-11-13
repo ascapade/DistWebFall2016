@@ -26,10 +26,11 @@
 	if($count == 1 && $row['password'] == $pass)
 	{
 		//creates a session variable to indicate that a user is logged in
-		$_SESSION['login_user'] = $email;
+		$_SESSION['username'] = $email;
+		$_SESSION['loggedin'] = true;
 		
 		//Returns the user to a specified address, in this case it's the index page of the website
-		header("Location: index.html");
+		header("Location: ../index.html");
 	}
 	
 	//if a number of rows other than 1 is returned, or if the password is incorrect
