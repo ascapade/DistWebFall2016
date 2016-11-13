@@ -35,6 +35,6 @@
 	//if a number of rows other than 1 is returned, or if the password is incorrect
 	else
 	{
-		$error = "Incorrect login credentials."
+		$error = "Incorrect login credentials.";
 	}
 ?>
