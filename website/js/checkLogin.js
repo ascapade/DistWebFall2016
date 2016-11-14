@@ -22,7 +22,7 @@ function changeHTML(user){
 	var btnSignIn = document.getElementById("btnSignIn");
 	var username = document.getElementById("loggedInUser");
 	
-	btnSignIn.style.display = "none";
+	btnSignIn.innerHTML = "Sign Out";
 	username.innerHTML = user;
 }
 
