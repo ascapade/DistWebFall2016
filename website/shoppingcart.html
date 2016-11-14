@@ -209,28 +209,28 @@
                         </div>
                         <div class="modal-body">
                             <img class="img-responsive" src="images/logos/fadelogo.jpg"/>
-                            <div class="form-group">
-                                <label for="" class="control-label">Please Sign in</label>
-                                <div class="input-group input-group-md">
-                                    <span class="input-group-addon">Email</span> 
-                                    <input type="text" class="form-control" id="">
-                                </div>
-                                <br>
-                                <div class="input-group input-group-md">
-                                    <span class="input-group-addon">Password</span> 
-                                    <input type="password" class="form-control" id="">
-                                </div>
-                            </div>
-                            <div class="text-right">
-                                <a data-toggle="modal" data-target="#modalRegister">Register</a>
-                                <button type="submit" class="btn btn-success">
-                                Sign In
-                                    <span class="glyphicon glyphicon-play">
-                                    </span>
-                                </button>
-
-                            </div>
-
+                            <form class="login" action="./php/login.php" method="post">
+								<div class="form-group">
+									<label for="" class="control-label">Please Sign in</label>
+									<div class="input-group input-group-md">
+										<span class="input-group-addon">Email</span> 
+										<input type="text" class="form-control" id="" name="loginEmail">
+									</div>
+									<br>
+									<div class="input-group input-group-md">
+										<span class="input-group-addon">Password</span> 
+										<input type="password" class="form-control" id="" name="loginPassword">
+									</div>
+								</div>
+								<div class="text-right">
+									<a data-toggle="modal" data-target="#modalRegister">Register</a>
+									<button type="submit" class="btn btn-success">
+									Sign In
+										<span class="glyphicon glyphicon-play">
+										</span>
+									</button>
+								</div>
+							</form>
                         </div>
                     </div>
                 </div>
@@ -248,40 +248,46 @@
                         <div class="modal-body">
                             <img class="img-responsive" src="images/logos/fadelogo.jpg"/>
                             <div class="form-group">
-                                <label for="" class="control-label">Sign Up</label>
-                                <div class="input-group input-group-md">
-                                    <span class="input-group-addon">First Name</span> 
-                                    <input type="text" class="form-control" id="txtFname">
-                                </div>
-                                <br>
-                                <div class="input-group input-group-md">
-                                    <span class="input-group-addon">Last Name</span> 
-                                    <input type="text" class="form-control" id="txtLname">
-                                </div>
-                                <br>
-                                <div class="input-group input-group-md">
-                                    <span class="input-group-addon">Email</span> 
-                                    <input type="text" class="form-control" id="txtEmail">
-                                </div>
-                                <br>
-                                <div class="input-group input-group-md">
-                                    <span class="input-group-addon">Password</span> 
-                                    <input type="password" class="form-control" id="txtPass">
-                                </div>
-                                <br>
-                                <div class="input-group input-group-md">
-                                    <span class="input-group-addon">Confirm Password</span> 
-                                    <input type="password" class="form-control" id="txtPass2">
-                                </div>
-                            </div>
-                            <div class="text-right">
-                                <button type="submit" class="btn btn-success">
-                                Sign In
-                                    <span class="glyphicon glyphicon-play">
-                                    </span>
-                                </button>
-                            </div>
-
+                                <form name="register" action="./php/register.php" method="post">
+									<label for="" class="control-label">Sign Up</label>
+									<div class="input-group input-group-md">
+										<span class="input-group-addon">First Name</span> 
+										<input type="text" class="form-control" id="txtFname" name="fname">
+									</div>
+									<br>
+									<div class="input-group input-group-md">
+										<span class="input-group-addon">Last Name</span> 
+										<input type="text" class="form-control" id="txtLname" name="lname">
+									</div>
+									<br>
+									<div class="input-group input-group-md">
+										<span class="input-group-addon">Email</span> 
+										<input type="text" class="form-control" id="txtEmail" name="email">
+									</div>
+									<br>
+									<div class="input-group input-group-md">
+										<span class="input-group-addon">Location</span> 
+										<input type="text" class="form-control" id="txtLocation" name="location">
+									</div>
+									<br>
+									<div class="input-group input-group-md">
+										<span class="input-group-addon">Password</span> 
+										<input type="password" class="form-control" id="txtPass" name="password">
+									</div>
+									<br>
+									<div class="input-group input-group-md">
+										<span class="input-group-addon">Confirm Password</span> 
+										<input type="password" class="form-control" id="txtPass2">
+									</div>
+									<div class="text-right">
+										<br>
+										<button type="submit" class="btn btn-success">
+										Sign In
+											<span class="glyphicon glyphicon-play">
+											</span>
+										</button>
+									</div>
+								</form>
                         </div>
                     </div>
                 </div>
