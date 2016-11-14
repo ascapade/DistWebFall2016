@@ -14,7 +14,7 @@ function check(){
 			}
 		}
 	}
-	xmlhttp.open("GET", "../php/checkLogin.php", true);
+	xmlhttp.open("GET", "./php/checkLogin.php", true);
 	xmlhttp.send();
 }
 
@@ -23,7 +23,6 @@ function changeHTML(user){
 	var username = document.getElementById("loggedInUser");
 	
 	btnSignIn.style.display = "none";
-	username.style.display = "block";
 	username.innerHTML = user;
 }
 
