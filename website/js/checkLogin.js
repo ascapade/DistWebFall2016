@@ -21,16 +21,9 @@ function check(){
 function changeHTML(user){
 	var btnSignIn = document.getElementById("btnSignIn");
 	var username = document.getElementById("loggedInUser");
-	if(user != "")
-	{
-		btnSignIn.innerHTML = "Sign Out";
-		username.innerHTML = user;
-	}
-	else
-	{
-		btnSignIn.innerHTML = "Sign In";
-		userName.innerHTML = "";
-	}
+	
+	btnSignIn.innerHTML = "Sign Out";
+	username.innerHTML = user;
 }
 
 window.onload = check();
