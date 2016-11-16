@@ -10,6 +10,7 @@ function check(){
 		if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 			if(xmlhttp.responseText != "false")
 			{
+				Console.log(xmlhttp.responseText);
 				changeHTML(xmlhttp.responseText);
 			}
 		}
@@ -21,9 +22,16 @@ function check(){
 function changeHTML(user){
 	var btnSignIn = document.getElementById("btnSignIn");
 	var username = document.getElementById("loggedInUser");
-	
-	btnSignIn.innerHTML = "Sign Out";
-	username.innerHTML = user;
+	if(user != "")
+	{
+		btnSignIn.innerHTML = "Sign Out";
+		username.innerHTML = user;
+	}
+	else
+	{
+		btnSignIn.innerHTML = "Sign In";
+		username.innerHTML = "Not signed in";
+	}
 }
 
 window.onload = check();
