@@ -2,7 +2,7 @@ var btnSignIn = document.getElementById("btnSignIn");
 btnSignIn.onclick = logout();
 
 function logout(){
-	if(btnSignIn.innerHTML = "Sign Out"){
+	if(btnSignIn.value = "Sign Out"){
 		var xmlhttp;
 		if (window.XMLHttpRequest) {
 			xmlhttp = new XMLHttpRequest();
@@ -31,5 +31,6 @@ function callback(reply){
 	var username = document.getElementById("loggedInUser");
 	
 	btnSignIn.innerHTML = "Sign In";
+	btnSignIn.value = "Sign In";
 	username.innerHTML = "";
 }

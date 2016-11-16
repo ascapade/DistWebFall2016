@@ -25,11 +25,13 @@ function changeHTML(user){
 	if(user != "")
 	{
 		btnSignIn.innerHTML = "Sign Out";
-		username.innerHTML = user;
+		btnSignIn.value = "Sign Out";
+		username.innerHTML = "Hello " + user;
 	}
 	else
 	{
 		btnSignIn.innerHTML = "Sign In";
+		btnSignIn.value = "Sign In";
 		username.innerHTML = "Not signed in";
 	}
 }
