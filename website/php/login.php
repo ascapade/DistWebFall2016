@@ -37,5 +37,6 @@
 	else
 	{
 		$error = "Incorrect login credentials.";
+		header("Location: ../index.html");
 	}
 ?>

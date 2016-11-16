@@ -60,11 +60,13 @@
 		unset($pass);
 		unset($email);
 		unset($location);
+		header("Location: ../index.html");
 	}
 	
 	//If the query fails
 	else{
 		$error = "Failure";
 		$errorMessage = "An unexpected error has occured, try again later.";
+		header("Location: ../index.html");
 	}
 ?>
