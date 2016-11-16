@@ -10,7 +10,7 @@ function check(){
 		if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 			if(xmlhttp.responseText != "false")
 			{
-				Console.log(xmlhttp.responseText);
+				console.log(xmlhttp.responseText);
 				changeHTML(xmlhttp.responseText);
 			}
 		}
