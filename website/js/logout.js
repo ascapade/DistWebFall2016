@@ -1,5 +1,5 @@
 var btnSignIn = document.getElementById("btnSignIn");
-btnSignIn.setAttribute = function(){
+btnSignIn.onclick = function(){
 	if(btnSignIn.value = "Sign Out"){
 		var xmlhttp;
 		if (window.XMLHttpRequest) {
