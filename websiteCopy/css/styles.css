@@ -1,0 +1,123 @@
+
+
+h1{
+	font-family: Pacifico !important;
+}
+.navbar-fixed-top{
+	background:#000 !important;
+}
+.navbar-nav > li > a{
+	font-family: Arial;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2pt;
+	font-weight: 600;
+
+}
+.btn-default {
+	background: #000 !important;
+    border: 2px solid #fff !important;
+    color: #fff !important;
+	font-size: 10pt !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2pt !important;
+    border-radius: 0 !important;	
+	font-weight: 600 !important;
+ -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s !important;
+}
+
+.btn-success {
+	background: #40DB40 !important;
+    border: 2px solid #fff !important;
+    color: #fff !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2pt !important;
+    border-radius: 0 !important;	
+	font-weight: 600 !important;
+ -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s !important;
+}
+
+.btn-danger {
+	background: #FF0D36 !important;
+    border: 2px solid #fff !important;
+    color: #fff !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2pt !important;
+    border-radius: 0 !important;	
+	font-weight: 600 !important;
+ -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s !important;
+ }
+
+.modal-content{
+	border-radius:0 !important;
+}
+
+.modal-header {
+  border-bottom: 0px solid !important;
+}
+
+.form-control{
+	border-radius: 0 !important;
+}
+
+.input-group-addon {
+	border-radius:0 !important;
+	backgroud-color: #3333CC !important;
+	color:#000 !important;
+	text-transform: uppercase !important;
+}
+
+.nav > li > a{
+	font-size:8pt;
+	 -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s !important;
+}
+.nav > li > a:hover, .nav > li > a:focus{
+	background: #000 !important;
+	color: #e91e63;
+}
+.btn-sign{
+	font-weight:600 !important;
+	letter-spacing: 2pt !important;
+}
+.btn-default:hover{
+	background: #e91e63 !important;
+	color: #fff !important;
+	border: 2px solid #e91e63 !important;
+}
+#logo {
+	margin-top:5px;
+}
+.page-header{
+	border-bottom: 2px solid #eee !important;
+}
+
+/* tshirt */
+
+.btn-primary{
+	border-radius: 0 !important;
+	border-color: #fff !important;
+}
+.thumbnail{
+	border:none !important;
+}
+
+/* for burger navigation */
+.navbar-toggle .icon-bar{
+	background: #fff !important;
+}

@@ -1,0 +1,1 @@
+INSERT INTO `inventory`(`quantity`, `price`, `gender`, `product_id`, `pictureLink`, `linkToProduct`) VALUES (30,25,male,1,"images/shirts/mens-1","www.techsavvyclothing.com/distwebfall2016/website/m.html")
