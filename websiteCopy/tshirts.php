@@ -121,7 +121,14 @@ if(!empty($_GET["action"])) {
                     <div class="form-group">
                         <a href="shoppingcart.php" class="btn btn-default">
                             <span class="glyphicon glyphicon-shopping-cart">
-                            </span><span id="cartTotal">0</span>
+                            </span><?php
+                            if(isset($_SESSION["cart_item"])) {
+                                $item_total = 0;
+                                ?>
+                                <?php echo sizeof($_SESSION["cart_item"]); ?>
+                                <?php
+                            }
+                            ?>
                         </a>
 
                         <input type="text" class="form-control" placeholder="Search">
